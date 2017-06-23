@@ -23,9 +23,9 @@ class icinga2::repo {
   if $::icinga2::manage_repo and $::icinga2::manage_package {
 
     case $::osfamily {
-      'redhat': {
+      'RedHat': {
         case $::operatingsystem {
-          'centos', 'redhat', 'oraclelinux': {
+          'CentOS', 'RedHat', 'oraclelinux': {
             yumrepo { 'icinga-stable-release':
               baseurl  => "http://packages.icinga.com/epel/${::operatingsystemmajrelease}/release/",
               descr    => 'ICINGA (stable release for epel)',
