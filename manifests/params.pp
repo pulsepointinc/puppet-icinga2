@@ -97,7 +97,7 @@ class icinga2::params {
       $service_reload       = "service ${service} reload"
 
       case $::osfamily {
-        'redhat': {
+        'RedHat': {
           $user    = 'icinga'
           $group   = 'icinga'
           $lib_dir = $::architecture ? {
