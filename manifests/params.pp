@@ -82,7 +82,7 @@ class icinga2::params {
 
   case $::kernel {
 
-    'linux': {
+    'Linux': {
       $conf_dir             = '/etc/icinga2'
       $log_dir              = '/var/log/icinga2'
       $run_dir              = '/var/run/icinga2'
